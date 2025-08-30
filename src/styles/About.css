@@ -1,0 +1,22 @@
+/* About.css */
+.about-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 40px;
+}
+
+.about-text { flex: 1; }
+
+.about-image img {
+  max-width: 280px;
+  border-radius: 20px;
+  box-shadow: 0 6px 20px rgba(255, 78, 205, 0.5);
+  transition: transform 0.3s;
+}
+.about-image img:hover { transform: scale(1.05); }
+
+@media (max-width: 1024px) {
+  .about-container { flex-direction: column; text-align: center; }
+  .about-image img { max-width: 200px; }
+}

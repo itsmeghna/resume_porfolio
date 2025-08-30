@@ -1,0 +1,26 @@
+/* Education.css */
+.education ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.edu-card {
+  background: rgba(255, 255, 255, 0.05);
+  padding: 18px;
+  border-radius: 10px;
+  transition: all 0.3s;
+  border-left: 4px solid #00aaff;
+  box-shadow: 0 0 8px rgba(0, 170, 255, 0.3);
+}
+
+.edu-card:hover {
+  transform: translateX(8px);
+  box-shadow: 0 0 20px rgba(0, 170, 255, 0.6);
+}
+
+.edu-card h3 {
+  color: #00aaff;
+  margin-bottom: 5px;
+}

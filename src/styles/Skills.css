@@ -1,0 +1,29 @@
+/* Skills.css */
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.skill-card {
+  background: rgba(255, 255, 255, 0.08);
+  padding: 20px;
+  border-radius: 12px;
+  text-align: center;
+  font-weight: 600;
+  transition: all 0.3s;
+  border: 1px solid transparent;
+}
+
+.skill-card:hover {
+  transform: translateY(-8px);
+  border-color: #ff4ecd;
+  box-shadow: 0 0 15px rgba(255, 78, 205, 0.6);
+}
+
+@media (max-width: 1024px) {
+  .skills-grid { grid-template-columns: repeat(2, 1fr); }
+}
+@media (max-width: 768px) {
+  .skills-grid { grid-template-columns: 1fr; }
+}

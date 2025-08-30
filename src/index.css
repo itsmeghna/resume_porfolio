@@ -1,0 +1,77 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(120deg, #0d1117, #161b22, #0d1117);
+  color: #fff;
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+}
+
+/* Sections */
+section {
+  padding: 60px 10%;
+  opacity: 0;
+  transform: translateY(40px);
+  transition: all 0.8s ease-out;
+}
+
+section.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+h2 {
+  font-size: 2.4rem;
+  margin-bottom: 20px;
+  color: #ff4ecd;
+  text-shadow: 0 0 10px rgba(255, 78, 205, 0.5);
+}
+
+p, li {
+  line-height: 1.6;
+}
+
+/* Floating Coder Background */
+body::before, body::after {
+  position: fixed;
+  font-family: 'Fira Code', monospace;
+  font-size: 14px;
+  white-space: pre;
+  z-index: -1;
+  pointer-events: none;
+  opacity: 0.2;
+  animation: floatCode 15s infinite alternate ease-in-out;
+}
+
+body::before {
+  content: "const add = (a, b) => a + b;";
+  top: 20%;
+  left: 10%;
+  color: rgba(0, 255, 200, 0.25);
+}
+
+body::after {
+  content: "function coder(){ return '💻'; }";
+  bottom: 25%;
+  right: 8%;
+  color: rgba(255, 100, 200, 0.25);
+}
+
+@keyframes floatCode {
+  from { transform: translateY(0) rotate(0deg); }
+  to { transform: translateY(-40px) rotate(-5deg); }
+}
+
+/* Responsive Padding */
+@media (max-width: 1024px) {
+  section { padding: 50px 6%; }
+}
+@media (max-width: 768px) {
+  section { padding: 40px 5%; }
+}

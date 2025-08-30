@@ -1,0 +1,30 @@
+/* Projects.css */
+.project-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 24px;
+}
+
+.project-card {
+  background: rgba(255, 255, 255, 0.08);
+  padding: 20px;
+  border-radius: 12px;
+  border: 1px solid transparent;
+  box-shadow: 0 0 12px rgba(0, 255, 200, 0.1);
+  transition: all 0.3s;
+}
+
+.project-card:hover {
+  transform: scale(1.05);
+  border-color: #00ffc8;
+  box-shadow: 0 0 20px rgba(0, 255, 200, 0.6);
+}
+
+.project-card h3 {
+  margin-bottom: 10px;
+  color: #00ffc8;
+}
+
+@media (max-width: 1024px) {
+  .project-grid { grid-template-columns: 1fr; }
+}
