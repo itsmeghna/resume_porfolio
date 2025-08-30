@@ -12,7 +12,7 @@ function About() {
     <section id="about" className="about">
       <div className="about-container">
         <div className="about-text">
-          <h2>About Me</h2>
+          <h2>About Myself</h2>
           <p>
             Experienced Software Developer with 2+ years of experience in building and 
             maintaining quality software products. Strong command over React, JavaScript, 
