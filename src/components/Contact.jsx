@@ -12,7 +12,7 @@ function Contact() {
       <h2>Contact Me</h2>
       <div className="contact-container">
         <div className="contact-info">
-          <p>📞 <b>+91 8981374652</b></p>
+          {/* <p>📞 <b>+91 8981374652</b></p> */}
           <p>📧 <b>meghnas2198@gmail.com</b></p>
           <p>🌍 Kolkata, India</p>
           <p>
