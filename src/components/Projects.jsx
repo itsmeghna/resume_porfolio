@@ -15,7 +15,15 @@ function Projects() {
     {
       title: "Portfolio Website",
       desc: "Personal responsive React portfolio showcasing my skills, projects, and experience."
-    }
+    },
+    {
+      title: "HR Recruitment System",
+      desc: "Built a web app with HTML, CSS, Bootstrap, MUI, and React to streamline recruitment processes."
+    },
+    {
+      title: "Delivery Service Website",
+      desc: "Developed a responsive website using HTML, CSS, Bootstrap, and React for a delivery service with QR code scanner."
+    },
   ];
 
   return (
